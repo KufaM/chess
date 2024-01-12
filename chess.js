@@ -170,7 +170,7 @@ document.querySelectorAll('.box').forEach(item => {
 
 
         document.querySelectorAll('.box').forEach(win => {
-            if (win.innerText == 'Wking' || win.innerText == 'Bking') {
+            if (win.innerText == 'WhiteKing' || win.innerText == 'BlackKing') {
                 numOfKings += 1
             }
 
@@ -225,17 +225,17 @@ document.querySelectorAll('.box').forEach(item => {
 
                     if (item2.style.backgroundColor == 'green' && item2.innerText.length == 0) {
 
-                        if (pinkText == `Wpawn` && aup == 800) {
+                        if (pinkText == `WhitePawn` && aup == 800) {
 
-                            document.getElementById(`b${a}`).innerText = 'Wqueen'
+                            document.getElementById(`b${a}`).innerText = 'WhiteQueen'
                             document.getElementById(pinkId).innerText = ''
                             coloring()
                             insertImage()
 
                         }
-                        else if (pinkText == `Bpawn` && aup == 100) {
+                        else if (pinkText == `BlackPawn` && aup == 100) {
 
-                            document.getElementById(`b${a}`).innerText = 'Bqueen'
+                            document.getElementById(`b${a}`).innerText = 'BlackQueen'
                             document.getElementById(pinkId).innerText = ''
                             coloring()
                             insertImage()
@@ -257,8 +257,8 @@ document.querySelectorAll('.box').forEach(item => {
                         if(item2.id=='b103'){
                             document.getElementById('b101').innerText = ''
                             document.getElementById('b102').innerText = ''
-                            document.getElementById('b103').innerText = 'Wking'
-                            document.getElementById('b104').innerText = 'Wrook'
+                            document.getElementById('b103').innerText = 'WhiteKing'
+                            document.getElementById('b104').innerText = 'WhiteRook'
                             document.getElementById('b105').innerText = ''
                             document.getElementById(pinkId).innerText = ''
                             whiteCastleChance=false
@@ -268,8 +268,8 @@ document.querySelectorAll('.box').forEach(item => {
                         }
                         else if(item2.id=='b107'){
                             document.getElementById('b105').innerText = ''
-                            document.getElementById('b106').innerText = 'Wrook'
-                            document.getElementById('b107').innerText = 'Wking'
+                            document.getElementById('b106').innerText = 'WhiteRook'
+                            document.getElementById('b107').innerText = 'WhiteKing'
                             document.getElementById('b108').innerText = ''
                             document.getElementById(pinkId).innerText = ''
                             whiteCastleChance=false
@@ -280,8 +280,8 @@ document.querySelectorAll('.box').forEach(item => {
                         else if(item2.id=='b803'){
                             document.getElementById('b801').innerText = ''
                             document.getElementById('b802').innerText = ''
-                            document.getElementById('b803').innerText = 'Bking'
-                            document.getElementById('b804').innerText = 'Brook'
+                            document.getElementById('b803').innerText = 'BlackKing'
+                            document.getElementById('b804').innerText = 'BlackRook'
                             document.getElementById('b805').innerText = ''
                             document.getElementById(pinkId).innerText = ''
                             blackCastleChance=false
@@ -291,8 +291,8 @@ document.querySelectorAll('.box').forEach(item => {
                         }
                         else if(item2.id=='b807'){
                             document.getElementById('b805').innerText = ''
-                            document.getElementById('b806').innerText = 'Brook'
-                            document.getElementById('b807').innerText = 'Bking'
+                            document.getElementById('b806').innerText = 'BlackRook'
+                            document.getElementById('b807').innerText = 'BlackKing'
                             document.getElementById('b808').innerText = ''
                             document.getElementById(pinkId).innerText = ''
                             blackCastleChance=false
